@@ -1,0 +1,427 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+  --section-padding:80px;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+  
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container{
+/* من أجل عدم إزاحة الكلام في المحتوى */
+width: 100%;
+max-width: 380px; 
+background-color: hsl(219, 30%, 18%);
+
+} 
+main{
+ 
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+ padding: 20px;
+}
+main img{
+  width:10%;
+  height: 10%;
+}
+main span{
+  
+  display: flex;
+  justify-content: space-between;
+  
+  gap:10px;
+}
+main span p{
+  font-size: 5px;
+}
+.email{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:20px 40px;
+  text-align: center;
+ 
+}
+.email img{
+  width: 70%;
+  height: 30%;
+}
+.email h4{
+  width: 100%;
+  font-size: 10px;
+  width: 60%;
+  /* max-width: 350px; */
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.email p{
+  line-height: 1.9;
+  width: 60%;
+ /* max-width: 290px; */
+ font-size: 5.5px;
+  padding-bottom: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.email p:last-child{
+  background-color:hsl(198, 60%, 50%);
+ 
+  width:40% ;
+  /* width: fit-content; */
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+
+
+.icons{
+  padding:20px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  flex-wrap: wrap;
+ text-align: center;
+ 
+}
+.icons .card{
+  width: 35%;
+  
+}
+.icons .card img{
+  width:20px;
+  height: 20px;
+}
+.icons .card h3{
+  
+  font-size: 7px;
+  line-height: 1.9;
+}
+.icons .card p{
+  
+  font-size: 3.6px;
+  line-height: 1.5;
+}
+
+.location{
+  width:100%;
+  padding:20px 20px 20px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.location img{
+  
+  width:50%;
+  height: 50%;
+}
+.location h2{
+  font-size: 9px;
+ padding-bottom: 8px;
+ width: 100px;
+}
+.location .text{
+  width: 100%;
+}
+.location .text p:first-of-type{
+  width: 100%;
+ font-size: 4.8px; 
+  padding-bottom: 5px;
+}
+.location .text p:last-of-type{
+  width: 100%;
+ font-size: 4.8px; 
+  padding-bottom: 5px;
+}
+.location .text a{
+  font-size: 4px;
+  color: #009688;
+}
+.documents{
+  width: 100%;
+  height: 10%;
+  padding:  10px 20px 90px 20px;
+  /* padding: 20px 10px; */
+}
+.Documents{
+  
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+.majed{
+  width: 20px;
+  height: 20px;
+ 
+}
+.document{
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 20%;
+  background-color:#0000002e; 
+}
+.document h4{
+  font-size:4px;
+  padding-bottom: 10px;
+}
+.bayou{
+  display:flex;
+  gap: 6px;
+}
+.bayou img{
+  width:10%;
+  height: 10%;
+  border-radius: 10px;
+}
+.ryo h2{
+  /* padding-top: 10px; */
+font-size: 4px;
+}
+.ryo p{
+  font-size: 4px;
+}
+
+.wrapper {
+  position: relative; 
+ 
+}
+
+.section{
+  position: absolute; /* Position the card relative to the wrapper */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  /* padding:  10px 20px 90px 20px; */
+  /* background-color:#0000002e; */
+  width: 60%;
+ text-align: center;
+ /* margin:40px auto; */
+ border-radius: 10px;
+ background-color:#232527ed;
+}
+
+.section h2 {
+  width: 100%;
+  font-size: 10px; /* Larger title font size */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.section p {
+  font-size: 4px; /* Paragraph font size */
+  color: #d1d1d1; /* Light grayish text for paragraph */
+  margin-bottom: 20px; 
+}
+.section .form {
+  display: flex; /* Align input and button side-by-side */
+  flex-direction: row;
+  
+  gap: 10px; /* Add spacing between input and button */
+  margin-top: 20px; /* Add spacing between the text and the form */
+}
+.section input.email,
+.section input.Get {
+  width: 100%;
+  padding: 10px; /* Add padding for better usability */
+  font-size: 6px; /* Adjust font size for better readability */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  border-radius: 30px; /* Add rounded corners */
+}
+
+
+
+.section input.Get {
+  background-color: hsl(198, 60%, 50%);
+  color: white ;
+  border: none;
+  cursor: pointer;
+}
+.section .form {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px; 
+  margin-top: 20px; 
+}
+ footer{
+  width: 100%;
+  max-width: 380px;
+ margin: 0 auto;
+  padding: 90px 20px 40px 20px;
+  background-color: #0c1524;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+    gap: 10px;
+   
+}
+.headings{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 4px;
+  gap: 20px;
+}
+footer img:first-child{
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+  padding-bottom: 15px;
+}
+.first-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.first-header .first{
+  width: 5%;
+  height: 5%;
+}
+footer .icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  
+} 
+.second-header{
+  width: 100%;
+ display: grid;
+ grid-template-columns: repeat(2,auto);
+ align-items: center;
+ gap: 5px;
+}
+.third-header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+  gap: 10px;
+
+}
+
+.second-header .photo1,
+.second-header .photo2 {
+  width: 10px; /* زيادة عرض الصور */
+  height: 10px; /* زيادة ارتفاع الصور */
+  object-fit: contain; /* ضمان ظهور الصورة بالكامل */
+  display: block; /* تأكد من عرض الصور */
+  margin: 0;
+  padding: 0;
+}
+
+
+@media(max-width:360px){
+  main{
+    padding:5px ;
+
+  }
+  main img {
+    width: 20%; /* تصغير حجم الصور */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  }
+  main span {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px; /* تقليل المسافة بين العناصر */
+}
+main span p {
+  font-size: 3px; /* تصغير حجم النصوص */
+}
+  .email{
+    
+    padding:5px;
+  }
+  .email p:last-child{
+    width: 90%;
+  }
+  .icons{
+    padding: 5px;
+  }
+  /* يوجد لدينا 2 لتجنب التعارض في القوى الشاشة الأساسية في الأعلى والثنية في الأسفل */
+  .icons .card{
+    width: 100%;
+    
+  }
+  .icons .card p{
+    font-size: 5px;
+  }
+  .location{
+    
+    flex-direction: column;
+    padding: 5px;
+  }
+  .location img{
+    width:90% ;
+    text-align: center;
+  }
+  .location .text p{
+   width:100%;
+   font-size: 10px!important;
+    
+  }
+  .location h2{
+    width: 100%;
+  }
+  .Documents{
+    flex-direction: column;
+  }
+
+  .section{
+    width: 95%;
+    padding:5px;
+    /* margin-top: 80px; */
+  }
+  .section h2{
+font-size: 7px;
+  }
+  .section .form{
+    flex-direction: column;
+  }
+  .section input.email,
+.section input.Get {
+  padding: 5px;
+}
+
+  footer{
+    flex-direction: column;
+    padding: 90px 5px 40px 5px;
+  }
+  .headings{
+    flex-direction: column;
+  }
+  .first-header{
+    width: 100%;
+  }
+  .third-header{
+    flex-direction: column;
+  }
+}
